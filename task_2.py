@@ -6,6 +6,8 @@ import time
 import numpy as np
 import pandas as pd
 
+# As the input features I'm using the first three numbers
+# I'm using K=3 as the number of clusters for the K Means algorithm
 def main():
     lottery_df = pd.read_csv("lottery.csv")
     valid_columns = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
